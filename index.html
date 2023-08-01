@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cinema Project</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+  <h1>POPCORN TIME</h1>
+  <h3 class="sub-header"><span style="color: rgb(255, 4, 4);">1</span> tickets were selected for ordering</h3>
+  <div class="screen" title="screen">
+    <img src="img/screen.png" alt="screen">
+  </div>
+  <table class="cinema">
+    <tbody class="cinema-seats">
+    </tbody>
+  </table>
+
+  <div hidden class="popup">
+    <button class="book-btn" data-i="" data-j="" onclick="onBookSeat(this)">Book this Seat</button>
+    <button class="exit" onclick="hideSeatDetails()">X</button>
+    <h2>Seat: <span>X-X</span></h2>
+    <h3>Price: $<span>X</span></h3>
+    <h4>Available seats: <span>0</span>
+      <button class="flashlight" onclick="highlightSeats(this)">🔦</button>
+    </h4>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

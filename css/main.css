@@ -1,0 +1,117 @@
+body {
+    background: #111;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 10px 7px 10px orange;
+}
+
+
+.screen {
+    margin: auto;
+    width: 50vw;    
+}
+
+.screen img {
+    width: 50vw;
+}
+
+.sub-header {
+    text-align: center;
+    color: orange;
+    text-shadow: 10px 7px 10px white;
+}
+
+.cinema {
+    padding-top: 60px;
+    width: 600px;
+    margin: auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.cell {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    /* border: 1px solid gray; */
+}
+
+.seat {
+    background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A);
+    cursor: pointer;
+}
+
+.selected {
+    background: linear-gradient(to top, black, orange);
+}
+
+.booked {
+    background: linear-gradient(to top, black, red);
+}
+
+.seat.booked:hover {
+    background: linear-gradient(to top, black, gray);
+    cursor: not-allowed;
+}
+
+.book-btn {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: orange;
+    cursor: pointer;
+    padding: 2px 8px;
+}
+
+.book-btn:hover {
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: white;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.highlight {
+    background: linear-gradient(to top, black, lightgreen);
+
+}
+
+.flashlight {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.exit {
+    position: absolute;
+    right: 3px;
+    border-radius: 10px;
+    padding: 2px 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.exit:hover {
+    background-color: white;
+    color: red;
+    transition: 0.2s;
+}
+
+.popup {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    box-shadow: 5px 5px 20px 5px #ef9313;
+}
